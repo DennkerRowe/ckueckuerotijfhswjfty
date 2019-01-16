@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-$ssl			= 'http'; // jika mau pakai ssl/https rubah valuenya disini
+$ssl			= 'https'; // jika mau pakai ssl/https rubah valuenya disini
 $domain			= ''.$ssl.'://'.$_SERVER['HTTP_HOST'];
 $domen 			= $_SERVER['HTTP_HOST'];
 $lpdomain		= 'jagootour.club';
