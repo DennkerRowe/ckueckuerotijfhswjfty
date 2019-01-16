@@ -4,7 +4,7 @@
 error_reporting(0);
 ini_set("display_errors", 0);
 date_default_timezone_set('America/New_York');
-$servername = 'http://'.$_SERVER['HTTP_HOST'];
+$servername = 'https://'.$_SERVER['HTTP_HOST'];
 $direktori = 'sitemap-folder';
 
 $handle = opendir($direktori);
