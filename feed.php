@@ -13,7 +13,7 @@ $s = rand(10,59);
 }
 
 $today = date("D, j M Y H:m:s")." +0000";
-$servername = 'http://'.$_SERVER['HTTP_HOST'];
+$servername = 'https://'.$_SERVER['HTTP_HOST'];
 
 
 
@@ -73,7 +73,7 @@ print '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
 	<title>'.$_SERVER['HTTP_HOST'].'</title>
 	<atom:link href="'.$servername.'/feed" rel="self" type="application/rss+xml" />
 	<link>'.$servername.'</link>
-	<description>Trouvez des livres électroniques gratuits au format livres et applications NOOK, vous pouvez télécharger gratuitement les ebooks en formats PDF, ePub et Kindle.</description>
+	<description>Trouvez des livres Ã©lectroniques gratuits au format livres et applications NOOK, vous pouvez tÃ©lÃ©charger gratuitement les ebooks en formats PDF, ePub et Kindle.</description>
 	<lastBuildDate>'.$today.'</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
