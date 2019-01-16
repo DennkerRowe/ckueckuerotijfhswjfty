@@ -1,0 +1,50 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^promo/([A-Za-z0-9-]+)?$ rotator.php?asin=$1
+ErrorDocument 404 /404.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^([A-Za-z0-9-]+)?.jpg$ gambar.php?file=$1 [L]
+RewriteRule ^sitemap/(.*)\.xml$ sitemap.xml.php?url=$1 [L]
+RewriteRule sitemap.xml$ sitemap-index.xml.php?url=$1 [L]
+
+
+RewriteRule promo.xml$ sitemap-index.xml.php?url=$1 [L]
+RewriteRule deal.xml$ sitemap-index.xml.php?url=$1 [L]
+RewriteRule discount.xml$ sitemap-index.xml.php?url=$1 [L]
+RewriteRule map.xml$ sitemap-index.xml.php?url=$1 [L]
+RewriteRule feed(.*)$ feed.php?url=$1 [L]
+
+#City
+RewriteRule ^city.xml$ xml-sitemap-index.php [L]
+RewriteRule ^hotel/(.*)\.xml$ xml-sitemap.php?file=$1.txt [L]
+
+#rss
+RewriteRule ([0-9]+)rss$ rss.php?url=$1 [L]
+
+#city rss
+RewriteRule ([0-9]+)rx$ indexer.php?url=$1 [L]
+RewriteRule indexer$ superindexer.php?url=$1 [L]
+
+</IfModule>
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
