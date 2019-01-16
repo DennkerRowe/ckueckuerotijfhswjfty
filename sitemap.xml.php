@@ -2,7 +2,7 @@
 error_reporting(0);
 ini_set("display_errors", 0);
 date_default_timezone_set('America/New_York');
-$servername = 'http://'.$_SERVER['HTTP_HOST'];
+$servername = 'https://'.$_SERVER['HTTP_HOST'];
 $direktori = $_SERVER['DOCUMENT_ROOT'].'/sitemap-folder/';
 $slug = 'promo';
 
@@ -38,7 +38,7 @@ echo '</urlset>';
 
 function seo_friendly_url($string) {    
 
-	$string = str_replace(array('ä', 'ö', 'ü', 'Ä', 'Ö', 'Ü', 'ß', 'œ'), array('ae', 'oe', 'ue', 'Ae', 'Oe', 'Ue', 'ss', 'oe'), $string);
+	$string = str_replace(array('Ã¤', 'Ã¶', 'Ã¼', 'Ã„', 'Ã–', 'Ãœ', 'ÃŸ', 'Å“'), array('ae', 'oe', 'ue', 'Ae', 'Oe', 'Ue', 'ss', 'oe'), $string);
 	$string = str_replace(array('[\', \']'), '', $string);
     $string = preg_replace('/\[.*\]/U', '', $string);
     $string = preg_replace('/&(amp;)?#?[a-z0-9]+;/i', '-', $string);
