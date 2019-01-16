@@ -1,0 +1,39 @@
+/*-----------------------------------------------
+
+/* White
+
+/*---------------------------------------------*/
+body {
+    background-color: #ffffff;
+    color: #939393;
+    font: 13px/23px Droid Sans,sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .sidebarpostviews, .sidebar.walleft1 a, .title a, .widget h3, .frontTitle, .sidebar.walleft2 a, 
+.single-title, .description_images, .imgdetail, .description_images_bottom, .copyright-text, #commentform p label, .total-comments, .commentmetadata, .comment time {
+    color: #303030;
+}
+.fn a, .comment time {
+    color: #ffffff;
+}
+.featured-cat {
+    color: #ffffff;
+}
+ #s {
+	background-color: #898989;
+	color: #000000 !important
+}
+#s { border: none;}
+
+#commentform textarea, input#author, input#email, input#url {
+	background-color: #ffffff;
+	color: #939393 !important;
+	border: 1px solid #dddddd;
+}
+.featured-thumbnail:hover { 
+	opacity: 0.8; 
+	filter: alpha(opacity=10); 
+}
+
+.featured-cat {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.44) 54%, rgba(0, 0, 0, 0.26) 86%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0;
+}
