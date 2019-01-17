@@ -124,9 +124,9 @@ function sidebar() {
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
 
-	<meta name="description" content="White Wallpaper Wordpress Themes" />
+	<meta name="description" content="Cheap Hotels Booking Deals Get Big Promo Discount Hotels Deals" />
 	<meta property="og:type" content="blog" />
-	<meta property="og:title" content="NicheWall Themes" />
+	<meta property="og:title" content="Cheap Hotels Booking Deals" />
 	<meta property="og:description" content="Cheap Hotels Booking Deals Get Big Promo Discount Hotels Deals" />
 	<meta property="og:url" content="/" />
 	<meta property="og:site_name" content="Cheap Hotels Booking Deals" />
